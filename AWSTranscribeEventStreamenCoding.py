@@ -28,7 +28,7 @@ class AWSTranscribeEventStreamenCoding():
         self.eventBytes = None
 
     def construct(self, raw, rawLength, headers):
-        print('RAW length: %d' % rawLength)
+        # print('RAW length: %d' % rawLength)
         self.eventBytes =  self.encodeChunk(raw, headers)
 
         # totalLength = 0

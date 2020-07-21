@@ -121,8 +121,8 @@ class AWSTranscribeVad():
         if self.triggered:
             if self.on_vad_changed:
                 self.on_vad_changed(self, self.triggered, self.completedVad)
-            print('-(%s)' % (frame.timestamp + frame.duration))
-            print("vad date: %s" % datetime.now())
+            # print('-(%s)' % (frame.timestamp + frame.duration))
+            # print("vad date: %s" % datetime.now())
         # If we have any leftover voiced audio when we run out of input,
         # yield it.
         leftVoice = b'' 
